@@ -1,3 +1,9 @@
+/*
+@author harshith kolagatla
+Created Date : 16th october 2020
+Functionaliy : program to check employee
+is present or not
+* */
 package EmployeeAttendance;
 import EmployeeAttendance.EmpAttendanceLogic;
 public class empAttentance {
