@@ -9,20 +9,18 @@ public class empWageSwitchLogic {
     public int SwitchWage() {
         int isFullTime=1;
         int isPartTime=2;
+        int empHr;
         double empCheck =Math.floor(Math.random()*10)%3;
         switch (empCheck) {
             case isFullTime:
-                int empRateHrFull = 20;
-                int emphrFull = 8;
-                int salaryFull = empRateHrFull * emphrFull;
-                return salaryFull;
+                empHr=8;
             case isPartTime:
-                int empRateHrPart = 20;
-                int emphrPart = 8;
-                int salaryPart = empRateHrPart * emphrPart;
-                return salaryPart;
+                empHr = 4;
             default:
-                return 0;
+                empHr=0;
         }
+        int empRatePerHr=20;
+        int salary=empHr*empRatePerHr;
+        return salary;
     }
 }

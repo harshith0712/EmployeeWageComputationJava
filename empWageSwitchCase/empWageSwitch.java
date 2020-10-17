@@ -10,6 +10,7 @@ public class empWageSwitch {
     public static void main(String args[]) {
         empWageSwitchLogic wage = new empWageSwitchLogic();
         int salary = wage.SwitchWage();
+        if(salary>0)
         System.out.println("the salary of the employee is " + salary);
     }
 }
