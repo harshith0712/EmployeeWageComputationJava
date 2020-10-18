@@ -6,12 +6,23 @@ and part time employee daily wage while employee
 hours per Month
 * */
 public class EmployeeWageComputationInJava {
-    public static void main (String args[]) {
-        System.out.println("Welcome to Employee Wage Problem");
-        EmployeeWageLogic empwage=new EmployeeWageLogic();
-        int totalSalary=empwage.EmpWage();
-        if (totalSalary>0)
-            System.out.println("the total salary of the employee is "+totalSalary);
+    public static void main(String args[]) {
+        EmployeeWageObject object = new EmployeeWageObject();
+        object.setCompanyName("Reliance");
+        object.setEmpRatePerHr(20);
+        object.setNumWorkingDays(20);
+        object.setTotalWorkingHrs(100);
+        EmployeeWageLogic reliance= new EmployeeWageLogic();
+        reliance.WageHrs(object.getCompanyName(), object.getEmpRatePerHr(), object.getNumWorkingDays(), object.getTotalWorkingHrs());
+
+        object.setCompanyName("D Mart");
+        object.setEmpRatePerHr(20);
+        object.setNumWorkingDays(20);
+        object.setTotalWorkingHrs(100);
+        EmployeeWageLogic Dmart = new EmployeeWageLogic();
+        Dmart.WageHrs(object.getCompanyName(), object.getEmpRatePerHr(), object.getNumWorkingDays(), object.getTotalWorkingHrs());
+
+
     }
 
 }
