@@ -8,8 +8,11 @@ and part time employee daily wage
 * */
 public class empParttimeWage {
     public static void main(String args[]) {
+        empParttimeWageObject object=new empParttimeWageObject();
+        object.setEmpRatePerHr(20);
         empParttimeWageLogic wage = new empParttimeWageLogic();
-        int salary = wage.PartWage();
-        System.out.println("the salary of the employee is " + salary);
+        int Salary=wage.PartWage(object.getIsFulltime(), object.getIsPartTime(), object.getEmpRatePerHr());
+        if (Salary>0)
+            System.out.println("the employee salary is "+Salary);
     }
 }

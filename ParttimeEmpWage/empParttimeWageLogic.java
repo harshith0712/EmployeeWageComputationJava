@@ -6,25 +6,22 @@ Functionality : logic to calculate full time employee
 and part time employee daily wage
 * */
 public class empParttimeWageLogic {
-    public int PartWage() {
-        int isFullTime=1;
-        int isPartTime=2;
+    int empHrs,salary;
+    public int PartWage(int isFullTime, int isPartTime, int empRatePerHr ) {
         double empCheck =Math.floor(Math.random()*10)%3;
         if (empCheck==isFullTime) {
-            int empRateHrFull = 20;
-            int emphrFull = 8;
-            int salaryFull = empRateHrFull * emphrFull;
-            return salaryFull;
+            System.out.println("the employee is full time employee");
+            empHrs=8;
+
         }
 
         else
             if (empCheck==isPartTime) {
-                int empRateHrPart = 20;
-                int emphrPart = 8;
-                int salaryPart = empRateHrPart * emphrPart;
-                return salaryPart;
+
+                System.out.println("the employee is part time employee");
+                empHrs=4;
             }
-                else
-                    return 0;
+            salary=empRatePerHr*empHrs;
+            return salary;
             }
     }
