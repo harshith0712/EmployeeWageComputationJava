@@ -6,8 +6,7 @@ Functionaliy : logic to check employee is present or not
 returns the employee check
 * */
 public class EmpAttendanceLogic {
-    int isFullTime=1;
-    public double Attendance () {
+    public double Attendance (int isFullTime) {
         double empCheck =Math.floor(Math.random()*10)%2;
         if (empCheck==isFullTime)
             return empCheck;
