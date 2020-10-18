@@ -1,4 +1,5 @@
 package empWageSwitchCase;
+import java.lang.Enum;
 /*
 @author : harshith kolagatla
 Created Date : 16th october 2020
@@ -7,15 +8,18 @@ and part time employee daily wage using Switch case
 * */
 public class empWageSwitchLogic {
     public int SwitchWage() {
-        int isFullTime=1;
-        int isPartTime=2;
+       final int isFullTime=1;
+        final int isPartTime=2;
         int empHr;
         double empCheck =Math.floor(Math.random()*10)%3;
-        switch (empCheck) {
+        int i=(int)empCheck;
+        switch (i) {
             case isFullTime:
                 empHr=8;
+                break;
             case isPartTime:
                 empHr = 4;
+                break;
             default:
                 empHr=0;
         }
