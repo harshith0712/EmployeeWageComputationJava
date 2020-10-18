@@ -2,6 +2,7 @@ package DailyempWage;
 /*
 @author : harshith kolagatla
 Created Date : 16th october 2020
+Modified Date : 18th october 2020
 Functionality : program to calculate employee
 daily wage
 * */
