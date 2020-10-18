@@ -8,9 +8,11 @@ and part time employee daily wage using Switch case
 * */
 public class empWageSwitch {
     public static void main(String args[]) {
+        empWageSwitchObject object=new empWageSwitchObject();
+        object.setEmpRatePerHr(20);
         empWageSwitchLogic wage = new empWageSwitchLogic();
-        int salary = wage.SwitchWage();
-        if(salary>0)
-        System.out.println("the salary of the employee is " + salary);
+        int Salary = wage.SwitchWage(object.getEmpRatePerHr());
+        if(Salary>0)
+        System.out.println("the salary of the employee is " + Salary);
     }
 }
