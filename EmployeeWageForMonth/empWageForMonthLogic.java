@@ -6,25 +6,24 @@ Functionality : program to calculate full time employee
 and part time employee daily wage using Switch case
 * */
 public class empWageForMonthLogic {
-    public int WageMonth() {
-        int isFullTime=1;
-        int isPartTime=2;
-        int empHr;
+    public int WageMonth(int empRatePerHr, int numWorkingDays) {
+        int empHrs;
         int salary,totalSalary=0;
-        int empRatePerHr=20;
-        int numWorkingDays=20;
         for(int day=1; day<numWorkingDays; day++) {
-            double empCheck = Math.floor(Math.random() * 10) % 3;
+            double randomNumber = Math.floor(Math.random() * 10) % 3;
+            int empCheck=(int)randomNumber;
 
             switch (empCheck) {
-                case isFullTime:
-                    empHr = 8;
-                case isPartTime:
-                    empHr = 4;
+                case 1:
+                    empHrs = 8;
+                    break;
+                case 2:
+                    empHrs = 4;
+                    break;
                 default:
-                    empHr = 0;
+                    empHrs = 0;
             }
-            salary=empHr*empRatePerHr;
+            salary=empHrs*empRatePerHr;
             totalSalary=totalSalary+salary;
         }
         return totalSalary;

@@ -8,8 +8,11 @@ and part time employee daily wage using Switch case
 * */
 public class empWageForMonth {
     public static void main(String args[]) {
+        empWageForMonthObject object=new empWageForMonthObject();
+        object.setEmpRatePerHr(20);
+        object.setNumWorkingDays(20);
         empWageForMonthLogic wage = new empWageForMonthLogic();
-        int totalSalary = wage.WageMonth();
+        int totalSalary = wage.WageMonth(object.getEmpRatePerHr(),object.getNumWorkingDays());
             System.out.println("the total salary of the employee is " + totalSalary);
     }
 
