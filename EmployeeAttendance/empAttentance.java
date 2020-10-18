@@ -12,7 +12,7 @@ public class empAttentance {
         EmpAttendanceLogic attendance=new EmpAttendanceLogic();
         double present=attendance.Attendance(object.getIsFullTime());
         if (present>0)
-            System.out.println("the attendance of the employee is present");
+            System.out.println("the employee is present");
 
     }
 }
