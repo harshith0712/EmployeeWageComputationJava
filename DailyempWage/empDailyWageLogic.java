@@ -6,11 +6,9 @@ Functionality : logic to calculate employee
 daily wage
 * */
 public class empDailyWageLogic {
-    public int DailyWage (int isFullTime) {
+    public int DailyWage (int isFullTime, int empRateHr, int emphr) {
             double empCheck =Math.floor(Math.random()*10)%2;
             if (empCheck==isFullTime) {
-                int empRateHr = 20;
-                int emphr = 8;
                 int salary = empRateHr * emphr;
                 return salary;
             }
