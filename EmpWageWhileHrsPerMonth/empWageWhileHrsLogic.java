@@ -7,27 +7,25 @@ and part time employee daily wage while employee
 hours per Month
 * */
 public class empWageWhileHrsLogic {
-    public int WageHrs() {
-        int isFullTime=1;
-        int isPartTime=2;
-        int empHr;
-        int salary,totalSalary=0;
+    int empHrs;
+    public int WageHrs(int empRatePerHr, int numWorkingDays, int totalWorkingHrs) {
+        int totalSalary=0;
         int totalEmpHrs=0,totalWorkingDays=0;
-        int empRatePerHr=20;
-        int numWorkingDays=20;
-        int toralWorkingHrs=100;
-        while (totalEmpHrs<toralWorkingHrs & totalWorkingDays<numWorkingDays) {
-            double empCheck = Math.floor(Math.random() * 10) % 3;
-
+        while (totalEmpHrs<totalWorkingHrs & totalWorkingDays<numWorkingDays) {
+            double randomNumber = Math.floor(Math.random() * 10) % 3;
+            int empCheck=(int)randomNumber;
             switch (empCheck) {
-                case isFullTime:
-                    empHr = 8;
-                case isPartTime:
-                    empHr = 4;
+                case 1:
+                    empHrs = 8;
+                    break;
+                case 2:
+                    empHrs = 4;
+                    break;
                 default:
-                    empHr = 0;
+                    empHrs = 0;
             }
-            totalEmpHrs=totalEmpHrs+empHr;
+            totalWorkingDays+=1;
+            totalEmpHrs=totalEmpHrs+empHrs;
             totalSalary=totalEmpHrs*empRatePerHr;
         }
         return totalSalary;

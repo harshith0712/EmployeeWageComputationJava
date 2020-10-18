@@ -8,8 +8,12 @@ hours per month
 * */
 public class empWageWhileHrs {
     public static void main(String args[]) {
+        empWageWhileHrsObject object=new empWageWhileHrsObject();
+        object.setEmpRatePerHr(20);
+        object.setNumWorkingDays(20);
+        object.setTotalWorkingHrs(100);
         empWageWhileHrsLogic wage = new empWageWhileHrsLogic();
-        int totalSalary = wage.WageHrs();
+        int totalSalary = wage.WageHrs(object.getEmpRatePerHr(), object.getNumWorkingDays(), object.getTotalWorkingHrs());
         System.out.println("the total salary of the employee is " + totalSalary);
     }
 
