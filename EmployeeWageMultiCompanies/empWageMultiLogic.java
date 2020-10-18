@@ -1,8 +1,9 @@
-package EmployeeWageRefactor;
+package EmployeeWageMultiCompanies;
 
-public class empWageReFactorLogic {
+public class empWageMultiLogic {
     int empHrs;
-    public int WageHrs(int empRatePerHr, int numWorkingDays, int totalWorkingHrs) {
+    public void WageHrs(String company, int empRatePerHr, int numWorkingDays, int totalWorkingHrs) {
+        System.out.println("the company name is "+company);
         int totalSalary=0;
         int totalEmpHrs=0,totalWorkingDays=0;
         while (totalEmpHrs<totalWorkingHrs & totalWorkingDays<numWorkingDays) {
@@ -22,6 +23,6 @@ public class empWageReFactorLogic {
             totalEmpHrs=totalEmpHrs+empHrs;
             totalSalary=totalEmpHrs*empRatePerHr;
         }
-        return totalSalary;
+        System.out.println("the total salary of an employee working in a "+company+"is  "+totalSalary);
     }
 }
