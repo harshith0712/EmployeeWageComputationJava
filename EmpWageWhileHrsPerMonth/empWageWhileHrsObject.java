@@ -1,5 +1,11 @@
 package EmpWageWhileHrsPerMonth;
-
+/*
+@author : harshith kolagatla
+Created Date : 17th october 2020
+Modified Date : 18th october 2020
+Functionality : program for encapsulating the empWageWhileHrs
+class with their members
+* */
 public class empWageWhileHrsObject {
     private int empRatePerHr;
     private int numWorkingDays;

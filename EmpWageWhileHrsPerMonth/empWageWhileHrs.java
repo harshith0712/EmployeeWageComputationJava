@@ -2,9 +2,10 @@ package EmpWageWhileHrsPerMonth;
 /*
 @author : harshith kolagatla
 Created Date : 17th october 2020
+Modified Date : 18th october 2020
 Functionality : program to calculate full time employee
 and part time employee daily wage while employee
-hours per month
+hours per month upto 100 working hours
 * */
 public class empWageWhileHrs {
     public static void main(String args[]) {
