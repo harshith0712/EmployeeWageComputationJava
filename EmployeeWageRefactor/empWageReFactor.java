@@ -1,5 +1,9 @@
 package EmployeeWageRefactor;
-
+/*
+@author : harshith kolagatla
+Created Date : 18th october 2020
+Functionality : program for employee wage for a Company
+* */
 public class empWageReFactor {
     public static void main(String args[]) {
         empWageReFactorObject object = new empWageReFactorObject();

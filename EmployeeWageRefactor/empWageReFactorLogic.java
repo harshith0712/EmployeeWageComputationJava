@@ -1,6 +1,19 @@
 package EmployeeWageRefactor;
+/*
+@author : harshith kolagatla
+Created Date : 18th october 2020
+Functionality : logic for employee wage for a Company
+* */
 
 public class empWageReFactorLogic {
+/*
+Functionality : this method contains logic for calculating
+full time and part time employee wage for a Company
+@param empRatePerHr is taken as argument
+@param numWorkingDays is taken as argument
+@param totalWorkingHrs is taken as argument
+@param totalSalary is returned as argument
+* */
     int empHrs;
     public int WageHrs(int empRatePerHr, int numWorkingDays, int totalWorkingHrs) {
         int totalSalary=0;
