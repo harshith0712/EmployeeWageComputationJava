@@ -3,8 +3,9 @@ import EmployeeWageForMonth.empWageForMonthLogic;
 /*
 @author : harshith kolagatla
 Created Date : 16th october 2020
+Modified Date : 18th october 2020
 Functionality : program to calculate full time employee
-and part time employee daily wage using Switch case
+and part time employee daily wage using Switch case for a month
 * */
 public class empWageForMonth {
     public static void main(String args[]) {
