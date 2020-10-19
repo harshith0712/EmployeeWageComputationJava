@@ -1,5 +1,9 @@
 package EmployeeWageMultiCompanies;
-
+/*
+@author : harshith kolagatla
+Created Date : 18th october 2020
+Functionality : program for employee wage for multiple Companies
+* */
 public class empWageMulti {
     public static void main(String args[]) {
         empWageMultiObject object = new empWageMultiObject();

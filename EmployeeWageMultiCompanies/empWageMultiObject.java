@@ -1,5 +1,10 @@
 package EmployeeWageMultiCompanies;
-
+/*
+@author : harshith kolagatla
+Created Date : 18th october 2020
+Functionality : program for encapsulating empWageMultiLogic
+class and their members
+* */
 public class empWageMultiObject {
     private String CompanyName;
 

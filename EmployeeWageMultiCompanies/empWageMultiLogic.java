@@ -1,6 +1,19 @@
 package EmployeeWageMultiCompanies;
-
+/*
+@author : harshith kolagatla
+Created Date : 18th october 2020
+Functionality : logic for employee wage for multiple Companies
+* */
 public class empWageMultiLogic {
+    /*
+    Functionality : this method contains logic for calculating
+    full time and part time employee wage for multiple Companies
+    @param company is taken as argument
+    @param empRatePerHr is taken as argument
+    @param numWorkingDays is taken as argument
+    @param totalWorkingHrs is taken as argument
+    @param totalSalary is displayed
+    * */
     int empHrs;
     public void WageHrs(String company, int empRatePerHr, int numWorkingDays, int totalWorkingHrs) {
         System.out.println("the company name is "+company);
