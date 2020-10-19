@@ -1,13 +1,23 @@
 /*
 @author : harshith kolagatla
-Created Date : 17th october 2020
-Functionality : logic to calculate full time employee
+Created Date : 16th october 2020
+Modified Date : 18th october 2020
+Functionality : program to calculate full time employee
 and part time employee daily wage while employee
-hours per Month
+hours per Month for multiple Companies
 * */
 public class EmployeeWageLogic {
     int empHrs;
     public void WageHrs(String company, int empRatePerHr, int numWorkingDays, int totalWorkingHrs) {
+    /*
+    Functionality : this method contains logic for calculating
+    full time and part time employee wage for multiple Companies
+    @param company is taken as argument
+    @param empRatePerHr is taken as argument
+    @param numWorkingDays is taken as argument
+    @param totalWorkingHrs is taken as argument
+    @param totalSalary is displayed
+    * */
         System.out.println("the company name is "+company);
         int totalSalary=0;
         int totalEmpHrs=0,totalWorkingDays=0;

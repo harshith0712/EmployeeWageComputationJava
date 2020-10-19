@@ -1,3 +1,10 @@
+/*
+@author : harshith kolagatla
+Created Date : 16th october 2020
+Modified Date : 18th october 2020
+Functionality : program for encapsulating EmployeeWageLogic
+class and their members
+* */
 public class EmployeeWageObject {
     private String CompanyName;
 

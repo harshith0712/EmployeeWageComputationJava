@@ -1,9 +1,10 @@
 /*
 @author : harshith kolagatla
-Created Date : 17th october 2020
-Functionality : logic to calculate full time employee
+Created Date : 16th october 2020
+Modified Date : 18th october 2020
+Functionality : program to calculate full time employee
 and part time employee daily wage while employee
-hours per Month
+hours per Month for multiple Companies
 * */
 public class EmployeeWageComputationInJava {
     public static void main(String args[]) {
