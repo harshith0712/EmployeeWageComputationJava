@@ -1,17 +1,17 @@
+package EmployeeWageObjectArray;
 /*
 @author : harshith kolagatla
-Created Date : 16th october 2020
-Modified Date : 21th october 2020
+Created Date : 21th october 2020
 Functionality : program for encapsulating EmployeeWageLogic
 class and their members
 * */
-public class EmployeeWageObject {
+public class empWageObjectArrayObject {
     private String CompanyName;
     private int empRatePerHr;
     private int numWorkingDays;
     private int totalWorkingHrs;
 
-    public EmployeeWageObject(String companyName, int empRatePerHr, int numWorkingDays, int totalWorkingHrs) {
+    public empWageObjectArrayObject(String companyName, int empRatePerHr, int numWorkingDays, int totalWorkingHrs) {
         CompanyName = companyName;
         this.empRatePerHr = empRatePerHr;
         this.numWorkingDays = numWorkingDays;
@@ -65,4 +65,5 @@ public class EmployeeWageObject {
                 ", totalWorkingHrs=" + totalWorkingHrs +
                 '}';
     }
+
 }
