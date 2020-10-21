@@ -22,6 +22,7 @@ public class EmployeeWageComputationInJava {
         ArrayList<EmployeeWageObject>list=new ArrayList<EmployeeWageObject>();
         list.add(Dmart);
         list.add(Reliance);
+        list.add(bigBasket);
         for (EmployeeWageObject company : list) {
             System.out.println(company);
         }

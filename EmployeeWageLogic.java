@@ -1,7 +1,7 @@
 /*
 @author : harshith kolagatla
 Created Date : 16th october 2020
-Modified Date : 18th october 2020
+Modified Date : 21th october 2020
 Functionality : program to calculate full time employee
 and part time employee daily wage while employee
 hours per Month for multiple Companies
