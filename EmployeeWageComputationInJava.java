@@ -12,11 +12,13 @@ public class EmployeeWageComputationInJava {
     public static void main(String args[]) {
         EmployeeWageObject Reliance = new EmployeeWageObject("Reliance",20,20,100);
         EmployeeWageObject Dmart = new EmployeeWageObject("D-mart",20,20,100);
+        EmployeeWageObject bigBasket = new EmployeeWageObject("BigBasket",10,15,50);
         EmployeeWageLogic employeeObject= new EmployeeWageLogic();
         employeeObject.WageHrs(Reliance.getCompanyName(), Reliance.getEmpRatePerHr(), Reliance.getNumWorkingDays(), Reliance.getTotalWorkingHrs());
 
        // EmployeeWageLogic Dmart = new EmployeeWageLogic();
         employeeObject.WageHrs(Dmart.getCompanyName(), Dmart.getEmpRatePerHr(), Dmart.getNumWorkingDays(), Dmart.getTotalWorkingHrs());
+        employeeObject.WageHrs(bigBasket.getCompanyName(),bigBasket.getEmpRatePerHr(),bigBasket.getNumWorkingDays(),bigBasket.getTotalWorkingHrs());
         ArrayList<EmployeeWageObject>list=new ArrayList<EmployeeWageObject>();
         list.add(Dmart);
         list.add(Reliance);
