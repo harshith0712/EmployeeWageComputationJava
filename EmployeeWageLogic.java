@@ -38,6 +38,6 @@ public class EmployeeWageLogic {
             totalEmpHrs=totalEmpHrs+empHrs;
             totalSalary=totalEmpHrs*empRatePerHr;
         }
-        System.out.println("the total salary of an employee working in a "+company+"is  "+totalSalary);
+        System.out.println("the total salary of an employee working in a "+company+" is  "+totalSalary);
     }
 }
